@@ -1,3 +1,3 @@
 export default () => {
-  return 'Works';
+  return 'Start';
 }
