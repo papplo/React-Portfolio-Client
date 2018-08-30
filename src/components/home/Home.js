@@ -7,7 +7,7 @@ class HomeHero extends Component {
 
     return(
       <section id="home"
-        className="s-home page-hero target-section"
+        className="s-home page-hero target-section add-bottom"
         data-parallax="scroll"
         data-image-src="images/hero-bg.jpg"
         data-natural-width="3000"
@@ -22,7 +22,7 @@ class HomeHero extends Component {
               <div className="row home-content__main">
                 <h1>{this.props.heroTitle}</h1>
                 <h3>{this.props.payoff}</h3>
-                
+
                   <div className="home-content__button">
                       <a href="#styles" className="smoothscroll btn btn--primary btn--large">
                           {this.props.primaryCta}
