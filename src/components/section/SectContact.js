@@ -1,54 +1,50 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 class SectContact extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
 
   render() {
     return (
-      <section id="contact" class="s-contact target-section">
+      <section id="contact" className="s-contact target-section">
 
-              <div class="grid-overlay">
+              <div className="grid-overlay">
                   <div></div>
               </div>
 
-          <div class="row section-header narrow" data-aos="fade-up">
-              <div class="col-full">
-                  <h3 class="subhead">Keep In Touch</h3>
-                  <h1 class="display-1">Feel free to contact us for any <br /> project idea or collaboration</h1>
+          <div className="row section-header narrow" data-aos="fade-up">
+              <div className="col-full">
+                  <h3 className="subhead">Keep In Touch</h3>
+                  <h1 className="display-1">Feel free to contact us for any <br /> project idea or collaboration</h1>
               </div>
           </div>
 
-          <div class="row contact-main" data-aos="fade-up">
-              <div class="col-full">
-                  <p class="contact-email">
+          <div className="row contact-main" data-aos="fade-up">
+              <div className="col-full">
+                  <p className="contact-email">
                       <a href="mailto:#0">sayhello@sublime.com</a>
                   </p>
-                  <p class="contact-address">
+                  <p className="contact-address">
                   1600 Amphitheatre Parkway <br />
                   Mountain View, CA, 94043 US
                   </p>
-                  <p class="contact-numbers">
+                  <p className="contact-numbers">
                   +1 (917) 123 456 &nbsp; +1 (917) 333 987
                   </p>
 
-                  <ul class="contact-social">
+                  <ul className="contact-social">
                       <li>
-                          <a href="#0"><i class="fab fa-facebook"></i></a>
+                          <a href="#0"><i className="fab fa-facebook"></i></a>
                       </li>
                       <li>
-                          <a href="#0"><i class="fab fa-twitter"></i></a>
+                          <a href="#0"><i className="fab fa-twitter"></i></a>
                       </li>
                       <li>
-                          <a href="#0"><i class="fab fa-instagram"></i></a>
+                          <a href="#0"><i className="fab fa-instagram"></i></a>
                       </li>
                       <li>
-                          <a href="#0"><i class="fab fa-behance"></i></a>
+                          <a href="#0"><i className="fab fa-behance"></i></a>
                       </li>
                       <li>
-                          <a href="#0"><i class="fab fa-dribbble"></i></a>
+                          <a href="#0"><i className="fab fa-dribbble"></i></a>
                       </li>
                   </ul>
               </div>

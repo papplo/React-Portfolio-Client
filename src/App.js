@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import sanityClient from './lib/sanity'
-import imageUrlBuilder from '@sanity/image-url'
 import {
   HomeHero,
   FilmStrip,
@@ -15,10 +14,8 @@ const query = `*[_type == "works"] {
   publishedAt,
   mainImage,
   "cats": categories[]->title,
-  "poster":   mainImage.asset->url,
-  // "posterAspect": poster.asset->.metadata.dimensions.aspectRatio,
-  // "director": crewMembers[job == "Director"][0].person->name
-}[0...50]
+  "poster": mainImage.asset->url,
+  }[0...50]
 `
 
 class App extends Component {
@@ -30,16 +27,16 @@ class App extends Component {
       content : [],
     }
   }
-    componentDidMount () {
-      console.log('did mount');
-      this.apiFetch()
-    }
-    apiFetch () {
-      sanityClient.fetch(query)
-      .then(works => {
-        this.setState({'content': works})
-      })
-    }
+  componentDidMount () {
+    console.log('did mount');
+    this.apiFetch()
+  }
+  apiFetch () {
+    sanityClient.fetch(query)
+    .then(works => {
+      this.setState({'content': works})
+    })
+  }
 
   render() {
     return (
