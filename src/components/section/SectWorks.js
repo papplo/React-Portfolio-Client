@@ -37,9 +37,6 @@ class SectWorks extends React.Component {
                               </p>
                           </div>
 
-                          <a href="https://www.behance.net/" className="item-folio__project-link" title="Project link">
-                              <i className="icon-link"></i>
-                          </a>
                       </div>
                   </div>
                 )}
