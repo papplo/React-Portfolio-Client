@@ -6,15 +6,13 @@ const query = `*[_type == "works"] {
   mainImage,
   "cats": categories[]->title,
   "poster": mainImage.asset->url,
-  }[0...50]
-`
+  }[0...50]`
 
-export const FETCH_CMS = () => {
+export const FETCH_CMS = dispatch =>  {
   return dispatch => {
     dispatch(fetchCmsBegin())
-    return sanityClient.fetch(query)
+    sanityClient.fetch(query)
     .then(works => {
-      console.log(works)
       dispatch(fetchCmsSuccess(works))
       return works
     })

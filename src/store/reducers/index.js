@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux'
-import fetch from './fetch.js'
+import { default as folio } from './fetch'
+export { initialStore } from './fetch'
 
 export default combineReducers({
-  fetch
+  folio: folio
 })

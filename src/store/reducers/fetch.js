@@ -4,8 +4,8 @@ import {
   FETCH_CMS_FAILURE
 } from '../actions'
 
-const initialState = {
-  items: [],
+export const initialState = {
+  works: [],
   loading: false,
   error: null
 }
