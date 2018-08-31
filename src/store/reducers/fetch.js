@@ -16,6 +16,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         loading: true,
+        // types: action.record,
         error: null
       }
     case FETCH_CMS_SUCCESS:

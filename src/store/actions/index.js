@@ -1,17 +1,11 @@
 import sanityClient from '../../lib/sanity'
-const query = `*[_type == "works"] {
-  _id,
-  title,
-  publishedAt,
-  mainImage,
-  "cats": categories[]->title,
-  "poster": mainImage.asset->url,
-  }[0...50]`
+import {query} from '../../lib/sanity'
 
-export const FETCH_CMS = dispatch =>  {
+export const FETCH_CMS = (dispatch) =>  {
   return dispatch => {
-    dispatch(fetchCmsBegin())
-    sanityClient.fetch(query)
+    // FIX: Now this fetch to sanity is hardwired to handle "works"-type docuements, this needs to be dynamic in the upcoming versions
+    dispatch(fetchCmsBegin('works'))
+    sanityClient.fetch(query("works", 0, 15))
     .then(works => {
       dispatch(fetchCmsSuccess(works))
       return works
@@ -26,8 +20,9 @@ export const FETCH_CMS_BEGIN   = "FETCH_CMS_BEGIN"
 export const FETCH_CMS_SUCCESS = "FETCH_CMS_SUCCESS"
 export const FETCH_CMS_FAILURE = "FETCH_CMS_FAILURE"
 
-export const fetchCmsBegin = () => ({
-  type: FETCH_CMS_BEGIN
+export const fetchCmsBegin = (record) => ({
+  type: FETCH_CMS_BEGIN,
+  record: record
 })
 
 export const fetchCmsSuccess = works => ({

@@ -1,11 +1,22 @@
 import sanityClient from '@sanity/client'
-
 export default sanityClient({
-// Find your project ID and dataset in `sanity.json` in your studio project
   projectId: 'pphn0i1g',
   dataset: 'production',
   useCdn: true
-  // useCdn == true gives fast, cheap responses using a globally distributed cache.
-  // Set this to false if your application require the freshest possible
-  // data always (potentially slightly slower and a bit more expensive).
 })
+
+export const query = (type, start, limit) => {
+
+  type  !== 'undefined' ? type = 'works' : type
+  start !== 'undefined' ? start = 0 : start
+  limit !== 'undefined' ? limit = 50 : limit
+
+  return `*[_type == "${type}"] {
+    _id,
+    title,
+    publishedAt,
+    mainImage,
+    "cats": categories[]->title,
+    "poster": mainImage.asset->url,
+  }[${start}...${limit}]`
+}
