@@ -5,7 +5,7 @@ import {
 } from '../actions'
 
 export const initialState = {
-  works: [],
+  payload: [],
   loading: false,
   error: null
 }
@@ -23,7 +23,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        works: action.payload.works
+        payload: action.payload
       }
     case FETCH_CMS_FAILURE:
       return {

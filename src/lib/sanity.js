@@ -5,18 +5,14 @@ export default sanityClient({
   useCdn: true
 })
 
-export const query = (type, start, limit) => {
-
-  type  !== 'undefined' ? type = 'works' : type
-  start !== 'undefined' ? start = 0 : start
-  limit !== 'undefined' ? limit = 50 : limit
+export const query = (type = 'works', start = 0, limit = 50) => {
 
   return `*[_type == "${type}"] {
-    _id,
-    title,
-    publishedAt,
-    mainImage,
+    _type,
+    _id, title, publishedAt, mainImage,
+    "name": name,
     "cats": categories[]->title,
     "poster": mainImage.asset->url,
+    ...
   }[${start}...${limit}]`
 }

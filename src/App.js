@@ -24,7 +24,11 @@ class App extends Component {
 
     this.state = {
       loading : true,
-      content : [],
+      content : {
+        works: [],
+        loading: false,
+        error: null
+      },
     }
   }
   componentDidMount () {
