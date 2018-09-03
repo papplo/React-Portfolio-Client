@@ -8,7 +8,8 @@ export const FETCH_CMS = (dispatch, recordType) =>  {
     sanityClient.fetch(query(FETCH_TYPE, 0, 10))
 
     .then(result => {
-      dispatch(fetchCmsSuccess(result))
+      dispatch(fetchCmsSuccess(result, FETCH_TYPE))
+      return result
     })
     .catch(error => {
       dispatch(fetchCmsFail(error))
@@ -24,9 +25,10 @@ export const fetchCmsBegin = (recordType) => ({
 })
 
 export const FETCH_CMS_SUCCESS = "FETCH_CMS_SUCCESS"
-export const fetchCmsSuccess = (recordType) => ({
+export const fetchCmsSuccess = (result, recordType) => ({
   type: FETCH_CMS_SUCCESS,
-  payload: recordType
+  payload: {[recordType]: result},
+  [recordType]: result
 })
 
 export const FETCH_CMS_FAILURE = "FETCH_CMS_FAILURE"

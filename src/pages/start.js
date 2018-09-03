@@ -1,45 +1,55 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-
 import { FETCH_CMS } from '../store/actions'
 
+import {
+  HomeHero,
+  FilmStrip,
+  SectContact,
+  SectWorks } from '../components/'
+
 class Start extends Component {
-  componentDidMount() {
-    // this.props.fetchContentFromCms();
+  constructor(){
+    super()
+    this.state = {
+      categories: [],
+      author: [],
+      works: []
+    }
   }
-  load(recordType) {
-    console.log('start');
-    this.props.fetchContentFromCms(recordType);
+  componentDidMount() {
+    this.FETCH_init("works","author", "category");
+  }
+  FETCH_init(recordType) {
+    for (var i = 0; i < arguments.length; i++) {
+      this.props.fetchContentFromCms(arguments[i]);
+    }
   }
 
   render() {
-    console.log(this.props);
     return (
       <div>
-        <button onClick={()=>this.load("works")}>Get Works</button>
-        <button onClick={()=>this.load("author")}>Get Author</button>
-        <button onClick={()=>this.load("category")}>Get Categories</button>
-        <h1>Content:</h1>
-        {this.props.loading ? <p>loading...</p> : null}
-          {this.props.works.length > 0 ? (
-            this.props.works.map(work => <p key={work._id}>{work.title}</p>)
-          ) : null}
-
+          { this.props.works && <SectWorks
+              works={this.props.works}
+              limit={2}
+              worksTitle={"Our Works"}
+              payoff={"We create brands, products, and experiences that people love."}
+              /> }
       </div>
     )
   }
 }
 
 const mapStateToProps = state => ({
-    works:   state.FETCH.payload,
-    loading: state.FETCH.loading,
-    error:   state.FETCH.error
+    author:       state.FETCH.author,
+    categories:   state.FETCH.category,
+    works:        state.FETCH.works,
+    loading:   state.FETCH.loading,
+    error:     state.FETCH.error
 })
-
 const mapDispatchToProps = (dispatch) => {
   return({
     fetchContentFromCms: (recordType) => dispatch(FETCH_CMS(dispatch, recordType))
   })
 }
-
 export default connect(mapStateToProps, mapDispatchToProps)(Start)
