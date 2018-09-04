@@ -9,8 +9,7 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-import './static/base.css';
-import './static/main.css';
+import './static/scss/main-styles.css';
 
 import App from './App.js';
 import { Works, Start } from './pages/';
