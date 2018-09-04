@@ -1,0 +1,27 @@
+html {
+  font-size: 10px;
+}
+
+@media only screen and (max-width:400px) {
+  html {
+    font-size: 9.411764705882353px;
+  }
+
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #121212;
+  font-family: Graphik, sans-serif;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.941;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0;
+  padding: 0;
+}

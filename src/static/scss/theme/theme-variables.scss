@@ -1,0 +1,8 @@
+$--color-main: #0090B9;//#793ea5;
+$--color-main_hover: darken($--color-main,10%); //#6b3792;
+
+$--color-main-background: darken($--color-main, 12%); //#5e3080;
+$--color-main-desat: darken(desaturate($--color-main, 10%),28%); //#2a1538;
+
+
+$--color-white: #FFFFFF;

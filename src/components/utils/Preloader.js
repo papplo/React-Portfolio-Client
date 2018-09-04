@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './preloader.css'
 
 class Preloader extends Component {
   constructor(props) {

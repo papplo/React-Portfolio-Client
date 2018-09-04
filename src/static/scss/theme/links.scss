@@ -1,0 +1,16 @@
+a {
+  color: $--color-main;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #FFFFFF;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
