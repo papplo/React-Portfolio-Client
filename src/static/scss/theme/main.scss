@@ -1198,11 +1198,16 @@ body.menu-is-open {
  * ## home content
  * ------------------------------------------------------------------- */
 .home-content {
-  display: table-cell;
-  vertical-align: middle;
+  //display: table-cell;
+  //vertical-align: middle;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
   padding-top: 6.6rem;
   width: 100%;
-  overflow: hidden;
+  //overflow: hidden;
   position: relative;
   z-index: 4;
 }
@@ -1231,6 +1236,12 @@ body.menu-is-open {
 .home-content__main {
   position: relative;
   text-align: center;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 /* -------------------------------------------------------------------
