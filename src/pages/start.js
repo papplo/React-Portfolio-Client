@@ -24,12 +24,21 @@ class Start extends Component {
   render() {
     return (
       <div>
+        <HomeHero
+          heroTitle="Lorem ipsum"
+          payoff="UX nakkimakkara designer < />"
+          primaryCta="primary button"
+          secondaryCta="secondary button"
+          >
+          <FilmStrip />
+        </HomeHero>
           { this.props.works && <SectWorks
               works={this.props.works}
               limit={2}
-              worksTitle={"Our Works"}
-              payoff={"We create brands, products, and experiences that people love."}
+              worksTitle={"Reference Cases"}
+              payoff={"I create interfaces, products, and experiences that people love."}
               /> }
+              <SectContact />
       </div>
     )
   }
