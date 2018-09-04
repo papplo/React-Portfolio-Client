@@ -1,0 +1,66 @@
+/* System icons */
+
+@import url("../font-awesome/css/fontawesome-all.css");
+
+
+/*System font family */
+
+@font-face {
+  font-family: "Graphik";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    url("../fnots/Graphik-Regular-Web.woff")  format("woff"),
+    url("../fnots/Graphik-Regular-Web.eot") format("eot")
+  ;
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-weight: 500;
+  font-style: normal;
+  src:
+    url("../fnots/graphik-semibold-webfont.woff")  format("woff"),
+    url("../fnots/graphik-semibold-webfont.eot") format("eot")
+  ;
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-weight: 600;
+  font-style: normal;
+  src:
+    url("../fnots/Graphik-Bold-Web.woff")  format("woff"),
+    url("/static/fnots/Graphik-Bold-Web.eot") format("eot")
+  ;
+}
+
+@font-face {
+  font-family: "Publico Headline";
+  font-weight: 800;
+  font-style: normal;
+  src:
+    url("../fnots/PublicoHeadline-Black-Web.woff")  format("woff"),
+    url("../fnots/PublicoHeadline-Black-Web.eot") format("eot")
+  ;
+}
+
+@font-face {
+  font-family: "Publico Text";
+  font-weight: 600;
+  font-style: normal;
+  src:
+    url("../fnots/PublicoText-Bold-Web.woff")  format("woff"),
+    url("../fnots/PublicoText-Bold-Web.eot") format("eot")
+  ;
+}
+
+@font-face {
+  font-family: "Tiempos Text";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    url("../fnots/TiemposText-Regular.woff")  format("woff"),
+    url("../fnots/TiemposText-Regular.ttf") format("ttf")
+  ;
+}
