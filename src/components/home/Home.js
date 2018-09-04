@@ -6,14 +6,7 @@ class HomeHero extends Component {
   render() {
 
     return(
-      <section id="home"
-        className="s-home page-hero target-section add-bottom"
-        data-parallax="scroll"
-        data-image-src="images/hero-bg.jpg"
-        data-natural-width="3000"
-        data-natural-height="2000"
-        data-position-y="center"
-        >
+      <section id="home" className="s-home page-hero target-section add-bottom">
         {this.props.children}
           <div className="grid-overlay">
               <div></div>
@@ -24,22 +17,22 @@ class HomeHero extends Component {
                 <h3>{this.props.payoff}</h3>
 
                   <div className="home-content__button">
-                      <a href="#styles" className="smoothscroll btn btn--primary btn--large">
-                          {this.props.primaryCta}
+                      <a href={'#'+this.props.primaryCta.anchor} className="smoothscroll btn btn--primary btn--large">
+                          {this.props.primaryCta.label}
                       </a>
-                      <a href="#contact" className="smoothscroll btn btn--large">
-                        {this.props.secondaryCta}
+                      <a href={'#'+this.props.secondaryCta.anchor} className="smoothscroll btn btn--large">
+                        {this.props.secondaryCta.label}
                       </a>
                   </div>
               </div>
-              <div className="home-content__scroll">
+              {/*<div className="home-content__scroll">
                   <a href="#styles" className="scroll-link smoothscroll">
                       Scroll
                   </a>
-              </div>
+              </div>*/}
           </div>
 
-          <ul className="home-social">
+          {/*<ul className="home-social">
               <li>
                   <a href="#0"><i className="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
               </li>
@@ -55,7 +48,7 @@ class HomeHero extends Component {
               <li>
                   <a href="#0"><i className="fab fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
               </li>
-          </ul>
+          </ul>*/}
       </section>
     )
   }
@@ -64,8 +57,8 @@ class HomeHero extends Component {
 HomeHero.propTypes = {
 
   heroTitle: PropTypes.string,
-  primaryCta: PropTypes.string,
-  secondaryCta: PropTypes.string,
+  primaryCta: PropTypes.object,
+  secondaryCta: PropTypes.object,
 
   children: PropTypes.element,
 

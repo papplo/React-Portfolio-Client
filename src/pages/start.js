@@ -27,8 +27,8 @@ class Start extends Component {
         <HomeHero
           heroTitle="Lorem ipsum"
           payoff="UX nakkimakkara designer < />"
-          primaryCta="primary button"
-          secondaryCta="secondary button"
+          primaryCta={{'label':'Browse portfolio', 'anchor':'works'}}
+          secondaryCta={{'label': `Let's talk `, 'anchor':'contact'}}
           >
           <FilmStrip />
         </HomeHero>
