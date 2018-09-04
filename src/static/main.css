@@ -142,40 +142,40 @@ h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: 3.6rem;
+  font-size: 3rem;
   line-height: 1.25;
   letter-spacing: -.1rem;
 }
 
 @media only screen and (max-width:600px) {
   h1, .h1 {
-    font-size: 3.3rem;
+    font-size: 2.8rem;
     letter-spacing: -.07rem;
   }
 }
 
 h2, .h2 {
-  font-size: 3rem;
+  font-size: 2.4rem;
   line-height: 1.3;
 }
 
 h3, .h3 {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   line-height: 1.25;
 }
 
 h4, .h4 {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   line-height: 1.286;
 }
 
 h5, .h5 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.333;
 }
 
 h6, .h6 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 1.3125;
   text-transform: uppercase;
   letter-spacing: .16rem;
@@ -2115,7 +2115,7 @@ body.menu-is-open {
 .home-content h1 {
   font-family: Graphik, serif;
   font-weight: 500;
-  font-size: 12rem;
+  font-size: 8rem;
   line-height: 1;
   letter-spacing: -.0125em;
   color: #FFFFFF;
@@ -2127,7 +2127,7 @@ body.menu-is-open {
   margin-top: 1.2rem;
   font-family: Graphik, sans-serif;
   font-weight: 300;
-  font-size: 3.8rem;
+  font-size: 3rem;
   line-height: 1.342;
   font-style: normal;
   color: #9c9c9c;
@@ -2452,24 +2452,24 @@ body.no-csstransitions .home-content__main {
  * responsive:
  * home
  * ------------------------------------------------------------------- */
-@media only screen and (max-width:1600px) {
+@media only screen and (max-width:1900px) {
   .home-content h1 {
-    font-size: 17rem;
+    font-size: 14rem;
   }
 
   .home-content h3 {
-    font-size: 3.7rem;
+    font-size: 3.4rem;
   }
 
 }
 
 @media only screen and (max-width:1400px) {
   .home-content h1 {
-    font-size: 16rem;
+    font-size: 12rem;
   }
 
   .home-content h3 {
-    font-size: 3.6rem;
+    font-size: 3.1rem;
   }
 
   .home-content__video .video-icon {
@@ -2486,11 +2486,11 @@ body.no-csstransitions .home-content__main {
   }
 
   .home-content h1 {
-    font-size: 14rem;
+    font-size: 9rem;
   }
 
   .home-content h3 {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
   .home-content__video {
@@ -2540,11 +2540,11 @@ body.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:1000px) {
   .home-content h1 {
-    font-size: 13rem;
+    font-size:9rem;
   }
 
   .home-content h3 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   .home-content__button .btn {
@@ -2563,11 +2563,11 @@ body.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:900px) {
   .home-content h1 {
-    font-size: 12rem;
+    font-size: 8rem;
   }
 
   .home-content h3 {
-    font-size: 2.7rem;
+    font-size: 2.8rem;
   }
 
   .home-social {
@@ -2578,7 +2578,7 @@ body.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:800px) {
   .home-content h1 {
-    font-size: 11.4rem;
+    font-size: 7rem;
   }
 
   .home-content h3 {
@@ -2616,11 +2616,11 @@ body.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:700px) {
   .home-content h1 {
-    font-size: 10.2rem;
+    font-size: 6.5rem;
   }
 
   .home-content h3 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .home-content__scroll {
@@ -2640,7 +2640,7 @@ body.no-csstransitions .home-content__main {
   }
 
   .home-content h1 {
-    font-size: 9rem;
+    font-size: 6rem;
   }
 
   .home-content h3 {
@@ -3638,7 +3638,7 @@ body.no-csstransitions .home-content__main {
 .contact-main {
   font-size: 3.3rem;
   line-height: 1.636;
-  margin-top: 9rem;
+  margin-top: 5rem;
 }
 
 .contact-main [class*="contact-"] {
@@ -3650,7 +3650,7 @@ body.no-csstransitions .home-content__main {
 }
 
 .contact-email a {
-  font-size: 9rem;
+  font-size: 6rem;
   font-weight: 700;
   line-height: 1.2;
   color: #FFFFFF;

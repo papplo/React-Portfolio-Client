@@ -12,22 +12,22 @@ class SectContact extends React.Component {
 
           <div className="row section-header narrow" data-aos="fade-up">
               <div className="col-full">
-                  <h3 className="subhead">Keep In Touch</h3>
-                  <h1 className="display-1">Feel free to contact us for any <br /> project idea or collaboration</h1>
+                  <h3 className="subhead">You had me at hello world</h3>
+                  <h3 className="display-3">Feel free to contact me for any assignment or project idea</h3>
               </div>
           </div>
 
           <div className="row contact-main" data-aos="fade-up">
               <div className="col-full">
                   <p className="contact-email">
-                      <a href="mailto:#0">sayhello@sublime.com</a>
+                      <a href="mailto:#0">pablo.anttila@gmail.com</a>
                   </p>
                   <p className="contact-address">
-                  1600 Amphitheatre Parkway <br />
-                  Mountain View, CA, 94043 US
+                  Palmbladsvägen 1, Lgh 1303, <br />
+                11258 Stockholm, Sweden
                   </p>
                   <p className="contact-numbers">
-                  +1 (917) 123 456 &nbsp; +1 (917) 333 987
+                  +46 (72) 007 38 63
                   </p>
 
                   <ul className="contact-social">
