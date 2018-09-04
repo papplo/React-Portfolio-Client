@@ -9,16 +9,11 @@ import {
   SectWorks } from '../components/'
 
 class Start extends Component {
-  constructor(){
-    super()
-    this.state = {
-      categories: [],
-      author: [],
-      works: []
-    }
-  }
+
   componentDidMount() {
-    this.FETCH_init("works","author", "category");
+    if (this.props.works === undefined) {
+      this.FETCH_init("works","author", "category");
+    }
   }
   FETCH_init(recordType) {
     for (var i = 0; i < arguments.length; i++) {

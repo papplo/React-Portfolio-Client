@@ -1,5 +1,7 @@
 import React from 'react';
-
+import PropTypes from 'prop-types'
+import {Link} from 'react-router-dom';
+import imageUrlBuilder from '@sanity/image-url'
 
 class SectWorks extends React.Component {
 
@@ -23,9 +25,12 @@ class SectWorks extends React.Component {
                   <div key={work._id} className="masonry__brick" data-aos="fade-up">
                       <div className="item-folio">
                           <div className="item-folio__thumb">
-                              <a href="" className="thumb-link" title={work.title} data-size="1050x700">
-                                  <img src={work.poster} alt="" />
-                              </a>
+                            <Link to={{
+                                pathname: `/works/${work.slug.current}`,
+                                state: work}}
+                                className="thumb-link">
+                              <img src={work.poster+'?h=350&w=600&fit=min'} alt={work.poster} />
+                            </Link>
                           </div>
 
                           <div className="item-folio__text">
@@ -49,5 +54,28 @@ class SectWorks extends React.Component {
   }
 
 }
+
+SectWorks.propTypes = {
+  works: PropTypes.array.isRequired,
+  limit: PropTypes.number,
+  worksTitle: PropTypes.string,
+  payoff: PropTypes.string
+};
+
+SectWorks.defaultProps = {
+    limit: 6,
+    works: [
+      {
+      worksTitle: 'Test Title',
+      title: 'Test Title',
+      payoff: 'This is the subtitle',
+      _id: 12345,
+      poster: 'image.jpg',
+      alt: 'placeholder from defaultprops',
+      cats: ['ux', 'dux', 'flux'],
+
+    },
+  ]
+  }
 
 export default SectWorks;

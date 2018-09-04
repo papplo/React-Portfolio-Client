@@ -37,12 +37,12 @@ ReactDOM.render((
 
         <Route
           path='/about'
-          render={(props) => <App {...props} extra={{"SomeVar": "Varvar"}} />}
+          render={(props) => <App {...props} initialProps={{"loading": false}} />}
           />
 
         <Route
-          path='/works'
-          render={(props) => <Works {...props} extra={{"SomeVar": "Varvar"}} />}
+          path='/works/:slug'
+          render={(props) => <Works {...props} initialProps={{"loading": false}} />}
           />
 
       </Switch>
