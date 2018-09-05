@@ -31,4 +31,19 @@
 @import './buttons.scss';
 
 
+/* -------------------------------------------------------------------
+ * ## home content
+ * ------------------------------------------------------------------- */
+@import './homehero.scss';
+
+@media only screen and (min-width:150px) {
+  .home-content h1 {
+    font-size: 15vmin;
+  }
+  .home-content h3 {
+    font-size: 4.5vmin;
+  }
+
+}
+
 @import './main.scss';

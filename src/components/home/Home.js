@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-class HomeHero extends Component {
 
+import meImage from '../../static/image/me.png'
+
+class HomeHero extends Component {
 
   render() {
 
@@ -12,6 +14,7 @@ class HomeHero extends Component {
               <div></div>
           </div>
           <div className="home-content">
+            <img alt="Pablo Anttila" src={meImage} className="home-avatar"/>
               <div className="row home-content__main">
                 <h1>{this.props.heroTitle}</h1>
                 <h3>{this.props.payoff}</h3>

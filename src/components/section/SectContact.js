@@ -32,19 +32,22 @@ class SectContact extends React.Component {
 
                   <ul className="contact-social">
                       <li>
-                          <a href="#0"><i className="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/pablo-anttila-bb84a24/"><i className="fab fa-linkedin"></i></a>
                       </li>
                       <li>
-                          <a href="#0"><i className="fab fa-twitter"></i></a>
+                          <a href="https://github.com/papplo"><i className="fab fa-github"></i></a>
                       </li>
                       <li>
-                          <a href="#0"><i className="fab fa-instagram"></i></a>
+                          <a href="https://www.instagram.com/pablo.anttila/"><i className="fab fa-instagram"></i></a>
                       </li>
                       <li>
-                          <a href="#0"><i className="fab fa-behance"></i></a>
+                          <a href="https://www.codewars.com/users/papplo"><i className="fab fa-js-square"></i></a>
                       </li>
                       <li>
-                          <a href="#0"><i className="fab fa-dribbble"></i></a>
+                          <a href="https://codepen.io/anttila/"><i className="fab fa-codepen"></i></a>
+                      </li>
+                      <li>
+                          <a href="https://medium.com/@pablo.anttila"><i className="fab fa-medium-m"></i></a>
                       </li>
                   </ul>
               </div>
