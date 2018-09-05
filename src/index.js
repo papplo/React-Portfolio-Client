@@ -11,7 +11,6 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 import './static/scss/main-styles.css';
 
-import App from './App.js';
 import { Works, Start } from './pages/';
 
 const store = createStore(
@@ -35,14 +34,12 @@ ReactDOM.render((
           />
 
         <Route
-          path='/about'
-          render={(props) => <App {...props} initialProps={{"loading": false}} />}
-          />
-
-        <Route
           path='/works/:slug'
           render={(props) => <Works {...props} initialProps={{"loading": false}} />}
           />
+
+        <Route component={Start} />
+
 
       </Switch>
     </BrowserRouter>

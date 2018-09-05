@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Redirect } from 'react-router-dom'
 import {
   SectContact,
   SectProcess } from '../components/'
@@ -16,8 +16,17 @@ class Works extends Component {
   backButtonHandler() {
     this.props.history.goBack()
   }
+
+  backToFetch() {
+    if (this.props.location.state === undefined) {
+      console.log('no state, going back to index the hard way');
+      window.location.href = "/";
+    }
+  }
+
   render() {
-    const {subtitle, cats, poster, body} = this.props.location.state;
+    {this.props.location.state || this.backToFetch()};
+    const {subtitle,cats,poster,body} = this.props.location.state;
     return (
             <div>
 
