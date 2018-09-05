@@ -12,7 +12,7 @@ class Start extends Component {
 
   componentDidMount() {
     if (this.props.works === undefined) {
-      this.FETCH_init("works","author", "category");
+      this.FETCH_init("works","author","category","themes");
     }
   }
   FETCH_init(recordType) {
@@ -45,6 +45,7 @@ class Start extends Component {
 }
 
 const mapStateToProps = state => ({
+    themes:        state.FETCH.themes,
     author:       state.FETCH.author,
     categories:   state.FETCH.category,
     works:        state.FETCH.works,
