@@ -1,13 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom';
-import imageUrlBuilder from '@sanity/image-url'
 
 class SectWorks extends React.Component {
 
   render() {
     const {works} = this.props;
-    console.log(works);
     return (
       <section id="works" className="s-works target-section">
           <div className="row section-header has-bottom-sep narrow target-section" data-aos="fade-up">

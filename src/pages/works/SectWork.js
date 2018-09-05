@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React  from 'react';
 
-import { Link } from 'react-router-dom';
 import BlockContent from '@sanity/block-content-to-react'
 
 
@@ -16,14 +15,16 @@ const serializers = {
 
 export default (props) => {
   return (
-    <section id="about" className="s-about target-section">
+    <section id="about" className="s-work target-section">
 
         <div className="row section-header bit-narrow aos-init aos-animate" data-aos="fade-up">
             <div className="col-full">
                 <h3 className="subhead">
                   <a onClick={()=>props.goBack()} className="backlink">works </a> / {props.slug}</h3>
                 <h1 className="display-1">
-                  {props.subtitle}</h1>
+                  {props.subtitle}<br />
+                <span className="h6">{props.cats.length > 0 ? props.cats.join(', '): 'No cats'}</span>
+              </h1>
             </div>
         </div>
 
