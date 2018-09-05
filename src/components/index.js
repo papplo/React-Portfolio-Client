@@ -1,4 +1,5 @@
 export { default as Preloader } from './utils/Preloader'
+export { default as ScrollTo } from './utils/ScrollTo'
 
 export { default as HomeHero } from './home/Home'
 export { default as FilmStrip } from './home/FilmStrip'
