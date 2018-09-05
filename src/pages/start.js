@@ -25,8 +25,8 @@ class Start extends Component {
     return (
       <div>
         <HomeHero
-          heroTitle="Lorem ipsum"
-          payoff="UX nakkimakkara designer < />"
+          heroTitle="pablo.anttila"
+          payoff="Front End Developer </> UI designer"
           primaryCta={{'label':'Browse portfolio', 'anchor':'works'}}
           secondaryCta={{'label': `Let's talk `, 'anchor':'contact'}}
           >
@@ -36,7 +36,7 @@ class Start extends Component {
               works={this.props.works}
               limit={2}
               worksTitle={"Reference Cases"}
-              payoff={"I create interfaces, products, and experiences that people love."}
+              payoff={"I create interfaces, products, and experiences that users love."}
               /> }
               <SectContact />
       </div>

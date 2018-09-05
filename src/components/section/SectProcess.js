@@ -11,33 +11,28 @@ class SectProcess extends React.Component {
 
             <div className="about-heading col-twelve tab-full text-center">
                 <h2 className="display-2">I like to build things incrementally</h2>
-                <p className="lead">These cases have all evolved from some years of practice, a process that gains from experience and draws inspiration from all former assignments.
+                <p className="lead">These cases have all evolved from years of practice, adding to a process that gains from experience and draws inspiration from all former assignments.
                 They are all created in teams with designers, developers and product owners to become real, live products.</p>
-              <img src={flowImage} className="about-illustration"/>
+              <img alt="Git flow, a developer process" src={flowImage} className="about-illustration"/>
           </div>
 
             <div className="about-process process block-1-3 block-tab-full">
                 <div className="col-block item-process">
                     <div className="item-process__text">
                         <h4 className="item-title">Define</h4>
-                        <p>Projects demand boundaries and scope. Thats why I start by asking what goals are achievable and how to measure their success.</p>
-                        <p>Whenever an incremental process is involved i like to think of projects as pizzas, less topping but more time in foundation. Thats a recipe for success!</p>
+                        <p>Projects demand boundaries and scope. Thats why I start by asking what goals are achievable and how to measure their success. This phase also serves to test the hyphotesis.</p>
                     </div>
                 </div>
                 <div className="col-block item-process">
                     <div className="item-process__text">
                         <h4 className="item-title">Design</h4>
-                        <p>Products dont come off shelves, they need consideration and the lean design process is just that, a pragmatical roadmap to designing products that customers want and need.</p>
-                        <p>Im currently deciding on what font to slap on this list, im leaning towards a geometric sans.</p>
+                        <p>Products dont come off shelves, they need consideration and the lean design process is just that, a data-driven roadmap to designing products that customers want and need.</p>
                     </div>
                 </div>
                 <div className="col-block item-process">
                     <div className="item-process__text">
                         <h4 className="item-title">Build</h4>
-                        <p>
-                        Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi explicabo non quis magni recusandae.
-                        Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore quasi deserunt ab.
-                        </p>
+                        <p>Developing and testing applications in a version controlled codebase is best practice. Thats what i do and hopefully some of these cases can prove that.</p>
                     </div>
                 </div>
             </div>
@@ -49,7 +44,7 @@ class SectProcess extends React.Component {
                     <li><a>Frameworks<em>React, NodeJs, Vue, AngularJs</em></a></li>
                     <li><a>Stack<em>Frontend, Backend, MVC</em></a></li>
                     <li><a>Software<em>Atom, iTerm, Sketch, Framer, Expo</em></a></li>
-                    <li><a>Github<em>56 repositories</em></a></li>
+                    <li><a>VCS<em>In GIT we trust!</em></a></li>
                 </ul>
             </div>
 

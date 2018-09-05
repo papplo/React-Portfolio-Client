@@ -14,7 +14,6 @@ class Works extends Component {
   }
 
   backButtonHandler() {
-    console.log('go back');
     this.props.history.goBack()
   }
 
@@ -27,13 +26,15 @@ class Works extends Component {
 
   render() {
     {this.props.location.state || this.backToFetch()};
-    const {title,subtitle,poster,mainImage,body} = this.props.location.state;
+    const {subtitle,cats,poster,body} = this.props.location.state;
     return (
             <div>
 
         <SectWork
           subtitle={subtitle}
           body={body}
+          poster={poster}
+          cats={cats}
           slug={this.props.match.params.slug}
           goBack={()=>this.backButtonHandler()}
           />
