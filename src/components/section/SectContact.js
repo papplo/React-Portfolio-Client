@@ -20,7 +20,7 @@ class SectContact extends React.Component {
           <div className="row contact-main" data-aos="fade-up">
               <div className="col-full">
                   <p className="contact-email">
-                      <a href="mailto:#0">pablo.anttila@gmail.com</a>
+                      <a href="mailto:pablo.anttila@gmail.com">pablo.anttila@gmail.com</a>
                   </p>
                   <p className="contact-address">
                   Palmbladsvägen 1, Lgh 1303, <br />
