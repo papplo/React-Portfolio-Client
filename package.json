@@ -21,7 +21,7 @@
   },
   "scripts": {
     "build-css": "node-sass-chokidar ./src/static/scss/main-styles.scss ./src/static/scss/main-styles.css --watch --skip-initial --output-style compressed",
-    "start": "node server.js",
+    "start": "react-scripts build && node server.js",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
