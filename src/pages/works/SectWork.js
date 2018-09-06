@@ -23,7 +23,7 @@ export default (props) => {
                   <a onClick={()=>props.goBack()} className="backlink">works </a> / {props.slug}</h3>
                 <h1 className="display-1">
                   {props.subtitle}<br />
-                <span className="h6">{props.cats.length > 0 ? props.cats.join(', '): 'No cats'}</span>
+                <span className="h6 work-categories">{props.cats.length > 0 ? props.cats.join(', '): 'No cats'}</span>
               </h1>
             </div>
         </div>

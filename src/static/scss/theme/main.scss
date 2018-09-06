@@ -1212,7 +1212,11 @@ body.menu-is-open {
 
 }
 
-
+span.work-categories {
+  display: block;
+  margin: 2rem auto;
+  color: darken($--color-white, 60%);
+}
 
 /* -------------------------------------------------------------------
  * ## about heading
