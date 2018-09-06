@@ -52,6 +52,7 @@ class SectContact extends React.Component {
                   </ul>
               </div>
           </div>
+          <p className="contact-address">Need a template? <a href="https://www.styleshout.com/free-templates/sublime/">Check out StyleShout!</a></p>
 
       </section>
 
